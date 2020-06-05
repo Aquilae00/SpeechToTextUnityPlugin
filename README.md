@@ -19,5 +19,5 @@ No dialog pop-ups</p>
 <li>Profit
 </ol>
 
-<h2>Reason Why I built this</h2>
+<h2>Reason WHY I built this</h2>
 <p>For ARCore. Needed a plugin that doesn't open shitty Google dialog pop-up or any other activity that interrupts ARCore activity</p>
