@@ -113,6 +113,7 @@ public class Plugin {
         intent.putExtra(RecognizerIntent.EXTRA_MAX_RESULTS, 5);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 
+        speechRecognizer.cancel();
         speechRecognizer.startListening(intent);
 
     }
