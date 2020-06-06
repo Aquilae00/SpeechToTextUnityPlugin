@@ -25,7 +25,7 @@ public class Plugin {
      * Set the Object name in Unity that has onActivityResult method attached to it.
      * @param string name of the object
      */
-    private static void setObjectName(String string) {
+    public static void setObjectName(String string) {
         objectName = string;
     }
 
@@ -35,7 +35,7 @@ public class Plugin {
      * This method will be used to obtain UnityActivity and later attached to SpeechRecognizer.
      * @param c the context to be user for this class.
      */
-    private static void setContext(Context c) {
+    public static void setContext(Context c) {
         context = c;
     }
 
@@ -43,7 +43,7 @@ public class Plugin {
      * This method locally instantiates the important components of Speech Recognition capability.
      * onResults method in listener passes the results of SpeechRecognition to Unity's objectName.
      */
-    private static void startListening() {
+    public static void startListening() {
         if(context==null){
             throw new NullPointerException("null context");
         }
